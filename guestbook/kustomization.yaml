@@ -1,0 +1,24 @@
+namespace: argocd
+
+resources:
+- guestbook-ui-deployment.yaml
+- guestbook-ui-svc.yaml
+
+patchesStrategicMerge:
+- |-
+  apiVersion: v1
+  kind: Service
+  metadata:
+    name: guestbook-ui
+  spec:
+    type: LoadBalancer
+
+patchesJSON6902:
+- target:
+    version: v1
+    kind: Service
+    name: guestbook-ui
+  patch: |-
+    - op: replace
+      path: /spec/ports/0/port
+      value: 6080
