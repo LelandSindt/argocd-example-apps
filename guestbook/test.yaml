@@ -1,0 +1,17 @@
+hello: ENC[AES256_GCM,data:djaOI9mcyw==,iv:wYnI07XZdhzMj+jLAj28GWWodkhUrt+dusTNjpQ1BZs=,tag:PpNGmt/Ic1wyuA+92Ib1Pw==,type:str]
+example_key: ENC[AES256_GCM,data:y/hbsNPLKfCi4ChpJg==,iv:XlAUDUR+526hQ4UMOdwNW/9aA6wYSiQbZCeMshXyU0g=,tag:rqbTJYk9jxCTVehVMdwAPg==,type:str]
+example_number: ENC[AES256_GCM,data:GZAi6ckmf162,iv:Efo/Q5O2aSTxN52SSZ3tP2LNKHKpHfE7cm0n2kjkqYM=,tag:amIgQEDXgI07/wzltGd71A==,type:float]
+example_booleans: ENC[AES256_GCM,data:de5vwUw=,iv:z8P5ImYKUGb7Vs9QzEUjhO/3o0b/6Hev8WrbVy9Eysw=,tag:9gWzL4iC6HxuKruAoAuQSw==,type:bool]
+joe: null
+sops:
+    kms: []
+    gcp_kms:
+    -   resource_id: projects/deft-epigram-262002/locations/global/keyRings/sops/cryptoKeys/sops-key
+        created_at: '2020-02-08T19:24:22Z'
+        enc: CiQAXK0pKkSQCWPm1BfRtx0Vj3Sq7zSwnR3xIvbBv8NJb1RKc6gSSQAZIbLBci91TAvROGcSteKwCxIK+skKXTQED6UrXUuqW1QddwPcwfq1tA4HZz6KX02VN+hizDgiyKHMlz2wOqguz6aGO1msRmk=
+    azure_kv: []
+    lastmodified: '2020-02-08T23:12:37Z'
+    mac: ENC[AES256_GCM,data:uc+HTVJqcM0ZibUN90rOVnm/qFVeSQElYnC8L9GCtOlHUUgdx1XBWoMq6GcPhB+AyHsD1nnV3nFHqwr8T1402K8sP8tV0twhU6vc3BdYScDm42gCMLw+Mdm/fvocRwx3LKeEJZNsgxcCHvbKEJfBWKj1uAwkHl6XMpRPxqc4uY0=,iv:pzC0ee0jMH8epXvEdhRgSwqe+T9sl+xTELQVSUnX/fY=,tag:ggn4aQwmzbcBHARYWNPDeQ==,type:str]
+    pgp: []
+    unencrypted_suffix: _unencrypted
+    version: 3.5.0

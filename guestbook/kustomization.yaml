@@ -3,6 +3,9 @@ resources:
 - guestbook-ui-deployment.yaml
 - guestbook-ui-svc.yaml
 
+generators:
+- secret.yaml
+
 patchesStrategicMerge:
 - |-
   apiVersion: v1
